@@ -1,0 +1,10 @@
+inputString = input()
+outList = []
+outList.append(inputString[0])
+for i in range(1, len(inputString) - 1):
+    if inputString[i] == 's' or inputString[i] == 'S':
+        outList.append(inputString[i - 1]*2 + inputString[i + 1])
+    else:
+        outList.append(inputString[i])
+outList.append(inputString[len(inputString) - 1])
+print(outList)
