@@ -9,20 +9,20 @@ def series_sum(incoming: List[Union[float, str]]) -> str:
     return result
 
 
-mixed_numbers =[1,1.2]   # Список из int и float
-result_numbers =series_sum(mixed_numbers)  # Что должна вернуть series_sum
-assert series_sum([1,1.2]) == '11.2', (
+mixed_numbers = [1,2.1]  # Список из int и float
+result_numbers = str(12.1)
+assert series_sum(mixed_numbers) == result_numbers, (
     'Функция series_sum() не работает со списком чисел'
 )
 
-mixed_numbers_strings = [1,'sad'] # Cписок из чисел и строк
-result_numbers_strings = series_sum(mixed_numbers_strings) # Что должна вернуть series_sum
-assert series_sum([1,'sad']) == '1sad', (
+mixed_numbers_strings = [1,'sss'] # Cписок из чисел и строк
+result_numbers_strings = str('1sss') # Что должна вернуть series_sum
+assert series_sum(mixed_numbers_strings) == result_numbers_strings, (
     'Функция series_sum() не работает со смешанным списком'
 )
 
 empty = [] # Пустой список
-result_empty = series_sum(empty)# что должна вернуть series_sum
-assert series_sum([]) == '', (
+result_empty = ''# что должна вернуть series_sum
+assert series_sum(empty) == result_empty, (
     'Функция series_sum() не работает с пустым списком'
 )

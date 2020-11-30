@@ -16,11 +16,11 @@ plt.plot(a)
 print(a)
 plt.show()'''
 
-'''a = np.array([[random.randint(1,100) for i in range(10)] for z in range(10)])
+a = np.array([[random.randint(1,100) for i in range(10)] for z in range(10)])
 print(a)
 b = np.diagonal(a)
 plt.plot(b)
-plt.show()'''
+plt.show()
 
 '''a = np.array([[random.randint(1,10) for i in range(2)] for z in range(2)])
 b = np.array([[random.randint(1,10) for i in range(2)] for z in range(2)])
