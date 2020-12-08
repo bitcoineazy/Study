@@ -6,11 +6,11 @@ import time
 
 
 
-time_passed = []
-cycles = []
-dist_1 = []
-dist_2 = []
-distz = {}
+#time_passed = []
+#cycles = []
+#dist_1 = []
+#dist_2 = []
+#distz = {}
 
 
 
@@ -23,30 +23,31 @@ class Circles:
         self.canvas = canvas
         self.ball = canvas.create_oval([self.x1, self.y1], [self.x2, self.y2], fill="red")
         self.attempts = 0
-
         self.coords = self.canvas.coords(self.ball)
-
         self.time_start = time.time()
 
-    def move_ball_1(self):
 
-        self.start_cord = self.coords[0]
+
+    def move_ball_1(self):
+        random_tick = random.randint(1,10)
         deltax = 1
         deltay = 0
         self.canvas.move(self.ball, deltax, deltay)
-        self.canvas.after(100, self.move_ball_1)
+        self.canvas.after(random_tick, self.move_ball_1)
 
-        dist_1.append(self.canvas.coords(self.ball))
+        #dist_1.append(self.canvas.coords(self.ball))
         #self.end_cord = d
-        distz.update({time.time()-self.time_start:self.canvas.coords(self.ball)})
+        #distz.update({time.time()-self.time_start:self.canvas.coords(self.ball)})
+        #self.canvas.tag_bind('ball1', "<Double-1>", lambda event: pass)
 
 
     def move_ball_2(self):
+        random_tick = random.randint(1, 10)
         deltax = -1
         deltay = 0
         self.canvas.move(self.ball, deltax, deltay)
-        self.canvas.after(100, self.move_ball_2)
-        dist_2.append(1)
+        self.canvas.after(random_tick, self.move_ball_2)
+        #dist_2.append(1)
         self.end_cord = self.canvas.coords(self.ball)
 
 
@@ -55,7 +56,8 @@ class Circles:
         self.canvas.delete('all')
         self.ball1 = Circles(self.canvas, 0, 250, 50, 300) #0, 0, 50, 50 - края
         self.ball2 = Circles(self.canvas, 500, 250, 450, 300) #450, 450, 500, 500
-
+        self.canvas.addtag_closest('ball_1', 0, 250)
+        self.canvas.addtag_closest('ball_2', 500, 250)
 
         self.ball1.move_ball_1()
         self.ball2.move_ball_2()
@@ -73,7 +75,7 @@ class HealthTest(Frame):
         self.pack(fill=BOTH, expand=1)
         self.centerWindow()
         self.initUI()
-
+        self.count = 0
 
     def initUI(self):
         self.test_circles = Button(self, text='Тест Точность', command=self.circles, width=16)
@@ -92,11 +94,16 @@ class HealthTest(Frame):
         self.circles_test = Toplevel(self.circles_window)
         self.canvas = Canvas(self.circles_test, width=500, height=500)
         self.canvas.grid(row=0, column=0)
-        self.canvas.bind_all('<space>', self.circle_test)
+        self.canvas.focus()
+        #self.canvas.addtag_all('circles')
         self.time_reaction = time.time()
+
         self.ball1 = Circles(self.canvas, 0, 250, 50, 300)
         self.ball2 = Circles(self.canvas, 500, 250, 450, 300)
+        self.canvas.addtag_closest('ball_1', 0, 250)
+        self.canvas.addtag_closest('ball_2', 500, 250)
 
+        self.canvas.bind_all('<space>', self.circle_test)
 
     def circle_test(self, event):
         '''if event.char == event.keysym:
@@ -105,20 +112,38 @@ class HealthTest(Frame):
         #print(event)
         #print(time.time() - self.time_reaction)
 
-        self.ball1.refresh_ball()
-        self.ball2.refresh_ball()
-        #self.canvas.delete('all')
-        self.show_range()
-        #print(self.ball1.x1, self.ball1.x2)
-        self.show_dist()
+        if self.count < 9:
+            ball_1 = self.canvas.find_withtag('ball_1')
+            x1, x2, y1, y2 = self.canvas.bbox(ball_1)
+            print(x1)
+            ball_2 = self.canvas.find_withtag('ball_2')
+            x1_2, x2_2, y1_2, y2_2 = self.canvas.bbox(ball_2)
+            print(x1_2)
+            self.x1 = x1
+            self.x1_2 = x1_2
+            self.ball1.refresh_ball()
+            self.ball2.refresh_ball()
+
+            #self.canvas.tag_bind('ball_2', self.canvas_range)
+            #self.canvas.delete('all')
+            self.show_range()
+            #print(self.ball1.x1, self.ball1.x2)
+            self.show_dist()
+            self.count += 1
+        else:
+            print('игра окончена')
+
+    def canvas_range(self):
+        pass
+
     def show_range(self):
         '''centre_1 = 25
         centre_2 = 475
         for i in range(len(time_passed)):
             print(time.time() - time_passed[i])'''
         self.range = 0
-        print(dist_1[-1])
-        print(distz)
+        #print(dist_1[-1])
+        #print(distz)
         #print((475 - len(dist_2)) - (len(dist_1)+25))
         '''for value in distz.values():
             print(value)'''
@@ -134,8 +159,7 @@ class HealthTest(Frame):
 
     def show_dist(self):
         #print(len(cycles) - self.range)
-        print(len(cycles))
-
+        pass
     def instruction(self):
         help_texts = 'Тест запускается при нажатии на SPACE'
         self.instruction_window = Toplevel(self)
