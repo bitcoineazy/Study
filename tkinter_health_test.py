@@ -108,12 +108,16 @@ class HealthTest(Frame):
             fn = self.stats.add_subplot(1,1,1)
             x = [i+1 for i in range(10)]
             y = self.results[1:]
-            fn.plot(x, y)
-            fn.set_xlabel('Попытки', color='blue')
-            fn.set_ylabel('Точность соотношения шариков(расстояние между ними)', color='red')
-            fn.set_title('Тест на точность')
-            self.stats_canvas = FigureCanvasTkAgg(self.stats, self.stats_window)
-            self.stats_canvas.get_tk_widget().grid()
+            try:
+                fn.plot(x, y)
+                fn.set_xlabel('Попытки', color='blue')
+                fn.set_ylabel('Точность соотношения шариков(расстояние между ними)', color='red')
+                fn.set_title('Тест на точность')
+                self.stats_canvas = FigureCanvasTkAgg(self.stats, self.stats_window)
+                self.stats_canvas.get_tk_widget().grid()
+            except ValueError:
+                self.circles_test.destroy()
+                print('Ошибка, нажмите обновить чтобы сбросить значения предыдущего теста')
 
     def refresh_button(self):
         self.results = []
