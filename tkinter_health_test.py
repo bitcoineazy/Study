@@ -1,18 +1,10 @@
 from tkinter import *
 from tkinter import filedialog as fd
 import random
-import keyboard
 import time
-
-
-
-#time_passed = []
-#cycles = []
-#dist_1 = []
-#dist_2 = []
-#distz = {}
-
-
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import csv
 
 class Circles:
     def __init__(self, canvas, x1, y1, x2, y2):
@@ -26,8 +18,6 @@ class Circles:
         self.coords = self.canvas.coords(self.ball)
         self.time_start = time.time()
 
-
-
     def move_ball_1(self):
         random_tick = random.randint(1,10)
         deltax = 1
@@ -35,21 +25,13 @@ class Circles:
         self.canvas.move(self.ball, deltax, deltay)
         self.canvas.after(random_tick, self.move_ball_1)
 
-        #dist_1.append(self.canvas.coords(self.ball))
-        #self.end_cord = d
-        #distz.update({time.time()-self.time_start:self.canvas.coords(self.ball)})
-        #self.canvas.tag_bind('ball1', "<Double-1>", lambda event: pass)
-
-
     def move_ball_2(self):
         random_tick = random.randint(1, 10)
         deltax = -1
         deltay = 0
         self.canvas.move(self.ball, deltax, deltay)
         self.canvas.after(random_tick, self.move_ball_2)
-        #dist_2.append(1)
         self.end_cord = self.canvas.coords(self.ball)
-
 
     def refresh_ball(self):
         self.time_refresh = time.time()
@@ -58,14 +40,13 @@ class Circles:
         self.ball2 = Circles(self.canvas, 500, 250, 450, 300) #450, 450, 500, 500
         self.canvas.addtag_closest('ball_1', 0, 250)
         self.canvas.addtag_closest('ball_2', 500, 250)
-
         self.ball1.move_ball_1()
         self.ball2.move_ball_2()
-
 
     def show_range(self):
         centre_1 = 25
         centre_2 = 475
+
 
 class HealthTest(Frame):
     def __init__(self, parent):
@@ -76,12 +57,16 @@ class HealthTest(Frame):
         self.centerWindow()
         self.initUI()
         self.count = 0
+        self.results = []
 
     def initUI(self):
         self.test_circles = Button(self, text='Тест Точность', command=self.circles, width=16)
         self.instruction = Button(self, text='Инструкция', command=self.instruction, width=16)
+        self.refresh_button = Button(self, text='Обновить', command=self.refresh_button, width=16)
         self.test_circles.grid(row=0, column=0)
         self.instruction.grid(row=0, column=1)
+        self.refresh_button.grid(row=0, column=2)
+
 
     def circles(self):
         self.circles_window = Toplevel(self)
@@ -95,24 +80,15 @@ class HealthTest(Frame):
         self.canvas = Canvas(self.circles_test, width=500, height=500)
         self.canvas.grid(row=0, column=0)
         self.canvas.focus()
-        #self.canvas.addtag_all('circles')
         self.time_reaction = time.time()
-
         self.ball1 = Circles(self.canvas, 0, 250, 50, 300)
         self.ball2 = Circles(self.canvas, 500, 250, 450, 300)
         self.canvas.addtag_closest('ball_1', 0, 250)
         self.canvas.addtag_closest('ball_2', 500, 250)
-
         self.canvas.bind_all('<space>', self.circle_test)
 
     def circle_test(self, event):
-        '''if event.char == event.keysym:
-            msg = 'Normal Key %r' % event.char
-            print(msg)'''
-        #print(event)
-        #print(time.time() - self.time_reaction)
-
-        if self.count < 9:
+        if self.count < 10:
             ball_1 = self.canvas.find_withtag('ball_1')
             x1, x2, y1, y2 = self.canvas.bbox(ball_1)
             print(x1)
@@ -123,43 +99,31 @@ class HealthTest(Frame):
             self.x1_2 = x1_2
             self.ball1.refresh_ball()
             self.ball2.refresh_ball()
-
-            #self.canvas.tag_bind('ball_2', self.canvas_range)
-            #self.canvas.delete('all')
-            self.show_range()
-            #print(self.ball1.x1, self.ball1.x2)
-            self.show_dist()
+            self.results.append(abs(x1_2-x1))
             self.count += 1
         else:
             print('игра окончена')
+            print(self.results)
+            self.circles_test.destroy()
+            self.stats_window = Toplevel(self)
+            self.stats_window.title('Результаты теста')
+            #self.stats_frame = Frame(self.stats_window)
+            self.stats = Figure(figsize=(10, 10), dpi=100)
+            fn = self.stats.add_subplot(1,1,1)
+            x = [i for i in range(9)]
+            y = self.results[1:]
+            fn.plot(x, y)
+            fn.set_xlabel('Попытки', color='blue')
+            fn.set_ylabel('Точность соотношения шариков(расстояние между ними)', color='red')
+            fn.set_title('Тест на точность')
+            self.stats_canvas = FigureCanvasTkAgg(self.stats, self.stats_window)
+            self.stats_canvas.get_tk_widget().grid()
+            self.count = 0
 
-    def canvas_range(self):
-        pass
-
-    def show_range(self):
-        '''centre_1 = 25
-        centre_2 = 475
-        for i in range(len(time_passed)):
-            print(time.time() - time_passed[i])'''
-        self.range = 0
-        #print(dist_1[-1])
-        #print(distz)
-        #print((475 - len(dist_2)) - (len(dist_1)+25))
-        '''for value in distz.values():
-            print(value)'''
-
-    '''def dist(pt1, pt2):
-        return ((pt1.x - pt2.x) ** 2 + (pt1.y - pt2.y) ** 2) ** .5'''
+    def refresh_button(self):
+        self.results = []
 
 
-        #print(len(cycles))
-        #print(range - len(cycles))
-
-        #print(len(cycles) - len(cycles[0:-2]))
-
-    def show_dist(self):
-        #print(len(cycles) - self.range)
-        pass
     def instruction(self):
         help_texts = 'Тест запускается при нажатии на SPACE'
         self.instruction_window = Toplevel(self)
@@ -169,13 +133,46 @@ class HealthTest(Frame):
 
     def save_button(self):
         files = [('CSV Files', '*.csv'),
-                 ('Text Document', '*.txt'),
-                 ('Pickle Files', '*.pkl')]
+                 ('Text Document', '*.txt'),]
         file_name = fd.asksaveasfile(filetypes=files, defaultextension=files)
-        #file_name.write()
+        if '.csv' in file_name.name:
+            try:
+                with open(file_name.name, mode='w', newline='') as f:
+                    data = [['Попытка', 'Скорость реакции'],
+                            [1,self.results[1]],
+                            [2,self.results[2]],
+                            [3,self.results[3]],
+                            [4,self.results[4]],
+                            [5,self.results[5]],
+                            [6,self.results[6]],
+                            [7,self.results[7]],
+                            [8,self.results[8]],
+                            [9,self.results[9]]]
+                    writer = csv.writer(f)
+                    writer.writerows(data)
+            except PermissionError:
+                print('Закройте файл, чтобы сохранить')
+        elif '.txt' in file_name.name:
+            try:
+                with open(file_name.name, mode='w') as f:
+                    data = [['Попытка', 'Скорость реакции'],
+                            ['1',self.results[1]],
+                            ['2',self.results[2]],
+                            ['3',self.results[3]],
+                            ['4',self.results[4]],
+                            ['5',self.results[5]],
+                            ['6',self.results[6]],
+                            ['7',self.results[7]],
+                            ['8',self.results[8]],
+                            ['9',self.results[9]]]
+                    for item in data:
+                        f.writelines(f'{item[0]} {item[1]}')
+            except PermissionError:
+                print('Закройте файл, чтобы сохранить')
+
 
     def centerWindow(self):
-        w = 244
+        w = 366
         h = 26
         sw = self.parent.winfo_screenwidth()
         sh = self.parent.winfo_screenheight()
