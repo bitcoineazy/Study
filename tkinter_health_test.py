@@ -67,9 +67,9 @@ class HealthTest(Frame):
         self.instruction.grid(row=0, column=1)
         self.refresh_button.grid(row=0, column=2)
 
-
     def circles(self):
         self.circles_window = Toplevel(self)
+        self.circles_window.title('Тест на точность')
         self.circles_begin_button = Button(self.circles_window, text='Начать тест', command=self.circles_logic, width=16)
         self.circles_save = Button(self.circles_window, text='Сохранить результаты', command=self.save_button, width=len('Сохранить результаты'))
         self.circles_begin_button.grid(row=0, column=0)
@@ -88,13 +88,11 @@ class HealthTest(Frame):
         self.canvas.bind_all('<space>', self.circle_test)
 
     def circle_test(self, event):
-        if self.count < 10:
+        if self.count <= 10:
             ball_1 = self.canvas.find_withtag('ball_1')
             x1, x2, y1, y2 = self.canvas.bbox(ball_1)
-            print(x1)
             ball_2 = self.canvas.find_withtag('ball_2')
             x1_2, x2_2, y1_2, y2_2 = self.canvas.bbox(ball_2)
-            print(x1_2)
             self.x1 = x1
             self.x1_2 = x1_2
             self.ball1.refresh_ball()
@@ -104,13 +102,14 @@ class HealthTest(Frame):
         else:
             print('игра окончена')
             print(self.results)
+            self.count = 0
             self.circles_test.destroy()
             self.stats_window = Toplevel(self)
             self.stats_window.title('Результаты теста')
             #self.stats_frame = Frame(self.stats_window)
             self.stats = Figure(figsize=(10, 10), dpi=100)
             fn = self.stats.add_subplot(1,1,1)
-            x = [i for i in range(9)]
+            x = [i+1 for i in range(10)]
             y = self.results[1:]
             fn.plot(x, y)
             fn.set_xlabel('Попытки', color='blue')
@@ -118,58 +117,46 @@ class HealthTest(Frame):
             fn.set_title('Тест на точность')
             self.stats_canvas = FigureCanvasTkAgg(self.stats, self.stats_window)
             self.stats_canvas.get_tk_widget().grid()
-            self.count = 0
 
     def refresh_button(self):
         self.results = []
 
-
     def instruction(self):
-        help_texts = 'Тест запускается при нажатии на SPACE'
+        help_texts = 'Тест на точность\n\n' \
+                     'Тест запускается при нажатии на SPACE\n' \
+                     'Всего 10 попыток\n' \
+                     'Программа считает расстояние между центрами шариков\n' \
+                     'Идеальный результат - 0(т.е. полностью совмещены)\n' \
+                     'С каждой попыткой скорость увеличивается' \
+                     'И по окончанию теста программа выводит\nграфик точности между попытками\n\n\n' \
+                     'Чтобы заново начать тест надо нажать Обновить в главном окне\n\n' \
+                     'Сохранить результаты теста можно в формате .csv,\n' \
+                     'Нажав на кнопку Сохранить результаты в окне существующего теста'
         self.instruction_window = Toplevel(self)
         self.help_text = Text(self.instruction_window)
         self.help_text.insert(1.0, help_texts)
         self.help_text.grid(row=0, column=0)
 
     def save_button(self):
-        files = [('CSV Files', '*.csv'),
-                 ('Text Document', '*.txt'),]
+        files = [('CSV Files', '*.csv')]
         file_name = fd.asksaveasfile(filetypes=files, defaultextension=files)
-        if '.csv' in file_name.name:
-            try:
-                with open(file_name.name, mode='w', newline='') as f:
-                    data = [['Попытка', 'Скорость реакции'],
-                            [1,self.results[1]],
-                            [2,self.results[2]],
-                            [3,self.results[3]],
-                            [4,self.results[4]],
-                            [5,self.results[5]],
-                            [6,self.results[6]],
-                            [7,self.results[7]],
-                            [8,self.results[8]],
-                            [9,self.results[9]]]
-                    writer = csv.writer(f)
-                    writer.writerows(data)
-            except PermissionError:
-                print('Закройте файл, чтобы сохранить')
-        elif '.txt' in file_name.name:
-            try:
-                with open(file_name.name, mode='w') as f:
-                    data = [['Попытка', 'Скорость реакции'],
-                            ['1',self.results[1]],
-                            ['2',self.results[2]],
-                            ['3',self.results[3]],
-                            ['4',self.results[4]],
-                            ['5',self.results[5]],
-                            ['6',self.results[6]],
-                            ['7',self.results[7]],
-                            ['8',self.results[8]],
-                            ['9',self.results[9]]]
-                    for item in data:
-                        f.writelines(f'{item[0]} {item[1]}')
-            except PermissionError:
-                print('Закройте файл, чтобы сохранить')
-
+        try:
+            with open(file_name.name, mode='w', newline='') as f:
+                data = [['Попытка', 'Скорость реакции'],
+                        [1,self.results[1]],
+                        [2,self.results[2]],
+                        [3,self.results[3]],
+                        [4,self.results[4]],
+                        [5,self.results[5]],
+                        [6,self.results[6]],
+                        [7,self.results[7]],
+                        [8,self.results[8]],
+                        [9,self.results[9]],
+                        [10,self.results[10]]]
+                writer = csv.writer(f)
+                writer.writerows(data)
+        except PermissionError:
+            print('Закройте файл, чтобы сохранить')
 
     def centerWindow(self):
         w = 366
