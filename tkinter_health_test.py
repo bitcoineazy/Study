@@ -6,6 +6,7 @@ from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import csv
 
+
 class Circles:
     def __init__(self, canvas, x1, y1, x2, y2):
         self.x1 = x1
