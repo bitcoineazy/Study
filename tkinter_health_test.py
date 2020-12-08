@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import filedialog as fd
 import random
-import time
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import csv
@@ -17,7 +16,6 @@ class Circles:
         self.ball = canvas.create_oval([self.x1, self.y1], [self.x2, self.y2], fill="red")
         self.attempts = 0
         self.coords = self.canvas.coords(self.ball)
-        self.time_start = time.time()
 
     def move_ball_1(self):
         random_tick = random.randint(1,10)
@@ -35,7 +33,6 @@ class Circles:
         self.end_cord = self.canvas.coords(self.ball)
 
     def refresh_ball(self):
-        self.time_refresh = time.time()
         self.canvas.delete('all')
         self.ball1 = Circles(self.canvas, 0, 250, 50, 300) #0, 0, 50, 50 - края
         self.ball2 = Circles(self.canvas, 500, 250, 450, 300) #450, 450, 500, 500
@@ -81,7 +78,6 @@ class HealthTest(Frame):
         self.canvas = Canvas(self.circles_test, width=500, height=500)
         self.canvas.grid(row=0, column=0)
         self.canvas.focus()
-        self.time_reaction = time.time()
         self.ball1 = Circles(self.canvas, 0, 250, 50, 300)
         self.ball2 = Circles(self.canvas, 500, 250, 450, 300)
         self.canvas.addtag_closest('ball_1', 0, 250)
