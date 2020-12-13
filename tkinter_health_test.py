@@ -41,10 +41,6 @@ class Circles:
         self.ball1.move_ball_1()
         self.ball2.move_ball_2()
 
-    def show_range(self):
-        centre_1 = 25
-        centre_2 = 475
-
 
 class HealthTest(Frame):
     def __init__(self, parent):

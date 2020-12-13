@@ -17,11 +17,7 @@ frequency = {}
 array = []
 array_time_pass = []
 time_start = time.time()
-
-
-
 while time.time() - time_start < 5:
-
     time.sleep(random.randint(1,2))
     winsound.Beep(500, 100)
     time_beep = time.time()
@@ -35,14 +31,13 @@ for i in range(len(array)):
     frequency.update({array[i]:array_time_pass[i]})
 
 print(frequency)
-plt.plot(array,array_time_pass)
+plt.plot(array, array_time_pass)
 plt.xlabel('Кнопка', color='red')
 plt.ylabel('Скорость реакции', color='blue')
 plt.title('Скорость реакции на звук')
 plt.show()
 name = input('Введите имя')
 with open(r'C:\Users\79268\Dev\csvs'+f"\\{name}.csv", mode='w', newline='') as f:
-
     fieldnames = array
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
