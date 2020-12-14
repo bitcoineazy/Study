@@ -14,7 +14,6 @@ class Circles:
         self.y2 = y2
         self.canvas = canvas
         self.ball = canvas.create_oval([self.x1, self.y1], [self.x2, self.y2], fill="red")
-        self.attempts = 0
         self.coords = self.canvas.coords(self.ball)
 
     def move_ball_1(self):
