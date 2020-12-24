@@ -26,6 +26,78 @@ on_release(срабатывает, когда опустили кнопки)
 и соответственно доступ к конкретным виджетам осуществляется через общего родителя - через Container (всё управления интерфейсом, данными)
 класс Container - наблюдатель observer
 
+При событие on_release(нажатие на кнопку) - текст из виджета TextInput попадал в виджет Label, т.е
+из класса Container нужен прямой доступ к этим двум объектам, это делается при помощи свойств класса,
+в которых значениями будут ссылки на нужные объекты.
+Для этого в .kv файле:
+<Container>:
+    #указываем новое св-во
+    new_property_text: text_input
+    new_property_label: label
+    #и указываем id у каждого виджета, чтобы подать в новое св-во, чтобы работать уже в python
+    TextInput:
+        id: text_input #id - не свойство класса, id используется парсером kivy для создания ссылок на конкретный объект
+        ...
+    Label:
+        id: label #также назначаем id для label
+        ...
+    FloatLayout:
+        Button:
+            ...
+
+Чтобы проверить id's можно через тест пройтись по атрибутту ids
+>>> c = Container()
+>>> c.ids
+{'text_input': <WeakProxy to <kivy.uix.textinput.TextInput object at 0x0AB60140>>}
+Получаем объект WeakProxy нашего TextInput, WeakProxy - слабая ссылка
+WeakRef - разработчик получает доступ к конкретному объекту, но при этом garbagecollector эту ссылку не учитывает и в случае чего он эти объекты подчищает
+Kivy на основе id создает ключ в словаре (observable_dict) и значения ставит слабую ссылку на объект
+>>> for i in dir(c):
+...     print(i)
+...
+>> ... 'new_property_text' ...
+видим в списке атрибутов наше новое св-во new_property и смотрим, что мы описали
+>>> c.new_property_text
+<WeakProxy to <kivy.uix.textinput.TextInput object at 0x0AB60140>>
+Также и с Label
+
+Мы хотим чтобы по on_release запускалась определённый метод(функция):
+FloatLayout:
+        Button:
+            on_release:
+                #root указывает на виджет, который на вершине иерархии, т.е на Container
+                #и прописываем функцию(change_text), которая должны быть в python файле у класса Container
+                root.change_text()
+python:
+
+class Container(GridLayout):
+    def change_text(self):
+        #ставим текст у Label = тексту у TextInput
+        #используя указанные нами новые свойства
+        self.new_property_label.text = self.new_property_text.text
+
+Но есть нюанс: так никто не пишет. Поскольку есть принцип явное лучше чем неявное.
+В классе создаются нормальные свойства:
+.kv:
+<Container>:
+    text_input: text_input
+    label_widget: label
+    ...
+python:
+class Container(GridLayout):
+    #назначаем нормальные свойства, импортировав ObjectProperty
+    #ObjectProperty - создает ссылку на объект в питоне(почти для всех типов данных)
+    text_input = ObjectProperty()
+    label_widget = ObjectProperty()
+    def change_text(self):
+        #ставим текст у Label = тексту у TextInput
+        #используя указанные нами новые свойства
+        self.label_widget.text = self.text_input.text
+
+Всё тоже самое, но такая запись более явная, нам не приходится залезать в .kv файл, чтобы посмотреть
+какие новые атрибуты мы прописали у главного класса и мы обеспечиваем себе
+создание свойств определённого типа
+
 
 
 
