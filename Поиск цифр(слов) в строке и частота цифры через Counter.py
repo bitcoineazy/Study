@@ -25,3 +25,9 @@ def func(str1):
     print(c)
 
 func(str1)
+'''str1 = 'bjib2342b4ob1jkb12j4bjb32j42jbjb'
+dic = {}
+for i in str1:
+    if i.isdigit():
+        dic[i] = dic[i].get(i, 0) + 1
+print(dic)'''
