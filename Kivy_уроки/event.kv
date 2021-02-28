@@ -1,0 +1,33 @@
+
+
+<Container>:
+    #назначаем кол-во строк и после каждый виджет будет последовательно размещен на 1,2,3 строкох
+    rows: 3
+    padding: 50
+    #указываем новое св-во
+    text_input: text_input
+    label_widget: label
+
+    TextInput:
+        id: text_input
+        font_size: 40
+        #size_hint: 1, 0.4
+        #можно использовать свойство size_hint_y , т.к по х всегда 1
+        size_hint_y: 0.4
+        multiline: False
+
+    Label:
+        id: label
+        text: 'Label'
+        font_size: 40
+    #влияем на размер, обернем кнопки и поместим её на FloatLayout
+    FloatLayout:
+        Button:
+            text: 'Input'
+            size_hint: 0.5, 0.4
+            font_size: 40
+            pos_hint: {'center_x': 0.5, 'y': 0.1}
+            #триггер - нажатие и отпускание кнопки
+            on_release:
+                self.text = 'On release'
+                root.change_text()
