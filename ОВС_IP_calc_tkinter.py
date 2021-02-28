@@ -16,7 +16,7 @@ class MyIPv4(IPv4Address):
     @classmethod
     def from_binary_repr(cls, binary_repr: str):
         """Создает IPv4 из двоичного представления."""
-        i = int(re.sub(r"[^01]", "", binary_repr), 2)  # 14 строка
+        i = int(re.sub(r"[^01]", "", binary_repr), 2)
         return cls(i)
 
 
