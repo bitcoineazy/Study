@@ -34,11 +34,23 @@ def repl(f_dict):
     for each in f_dict.items():
         print(each)
 
+import re
 def repl_mod(input):
     elements = input.split(' ')
-    elements.remove('СКЛЕИТЬ')
-    print(''.join(elements))
+    if elements[0] == 'СКЛЕИТЬ':
+        elements.remove('СКЛЕИТЬ')
+        print(''.join(elements))
+    if elements[0] == 'БРОСИТЬ':
+        index = re.findall(r'\S+[=]\S+', input)
+        name_value = ''.join(index).split('=')
+        print(f'Предмет брошен на расстояние {name_value[1]}')
+def repl_last(input):
+    elements = input.split(' ')
+
+    index = re.findall(r'\S+[=]\S+', input)
+    print(' '.join(index))
 
 
 repl(func_dict)
 repl_mod(input())
+#repl_last()
