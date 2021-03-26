@@ -10,4 +10,16 @@ pprint(vk_response.text)'''
 
 auth_token = os.getenv("TOKEN")
 vk_api = requests.get(f'https://api.vk.com/method/users.get?user_ids=USER_ID&v=5.92&access_token={auth_token}')
-print(vk_api.text)
+#print(vk_api.text)
+
+
+def get_friends(user_id):
+    data = {
+        # ваш код здесь
+    }
+    friends_list = requests.post(f'https://api.vk.com/method/friends.get?user_id=531301803&v=5.92&access_token={auth_token}')
+    return friends_list.json()['response']
+
+
+print(get_friends(531301803))
+# запрашиваем список друзей пользователя с ID 531301803
