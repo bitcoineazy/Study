@@ -46,8 +46,6 @@ def alg(n, points):
             range_fill = ranges[i+1]
         print(f'range_fill = {range_fill}')
         if range_fill % 2:
-            if range_fill == 1:
-                st.append('11')
             #print('yes')
             if i < 1:
                 st.append(0)
@@ -69,12 +67,12 @@ def alg(n, points):
             if i < 1:
                 st.append(0)
             #print('tru')
-            for i in range(1, (range_fill // 2)+1):
+            for i in range(1, (range_fill // 2) + 1):
                 st.append(i)
             previous_length = st[-1]
             for z in range(1, (range_fill // 2) + 1):
                 st.append((previous_length + 1) - z)
-            st.append(0)
+            #st.append(0)
     #if ranges[0] > 0:
     #    print('sf')
     #    st.pop(st[0])
