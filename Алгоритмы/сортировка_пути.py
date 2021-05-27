@@ -1,5 +1,5 @@
-x = 7
-y = '0 2 4 4 5 7 0'.split(' ') # answer: 0 1 2 1 0
+x = 15
+y = '0 2 4 4 5 7 0 2 9 2 0 1 2 3 0'.split(' ') # answer: 0 1 2 1 0
 
 def alg(n, points):
     counter = 0
@@ -30,10 +30,13 @@ def alg(n, points):
         range_fill = abs(ranges[i+1] - ranges[i])
         if range_fill == 0:
             range_fill = ranges[i]
+        if ranges[i+1] < ranges[i]:
+            range_fill = ranges[i+1]
         print(f'range_fill = {range_fill}')
         if range_fill % 2:
             print('yes')
-            st.append(0)
+            if i < 1:
+                st.append(0)
             for i in range((range_fill // 2) + 1):
                 st.append(i+1)
             previous_length = st[-1]
@@ -48,6 +51,7 @@ def alg(n, points):
             #    print(st)
             #    break
             #else:
+
             if i < 1:
                 st.append(0)
             print('tru')
@@ -62,8 +66,8 @@ def alg(n, points):
         #print(ranges[i])
         #print(ranges[i+1])
 
-    for i in range(len(zero_indexes)):
-        st.append(0)
+    #for i in range(len(zero_indexes)):
+    #    st.append(0)
 
     print(ranges)
     print(zero_indexes)
