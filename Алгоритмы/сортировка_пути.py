@@ -1,5 +1,5 @@
-x = 5
-y = '0 1 4 9 5 0'.split(' ') # answer: 0 1 2 1 0
+x = 7
+y = '0 2 4 4 5 7 0'.split(' ') # answer: 0 1 2 1 0
 
 def alg(n, points):
     counter = 0
@@ -22,27 +22,42 @@ def alg(n, points):
             #ranges.append(counter)
     st = []
     c = 0
+    if len(ranges) == 1:
+        for i in range(x):
+            st.append(i)
+        return print(st)
     for i in range(len(ranges) - 1):
-        range_fill = ranges[i+1] - ranges[i]
+        range_fill = abs(ranges[i+1] - ranges[i])
+        if range_fill == 0:
+            range_fill = ranges[i]
+        print(f'range_fill = {range_fill}')
         if range_fill % 2:
+            print('yes')
             st.append(0)
             for i in range((range_fill // 2) + 1):
                 st.append(i+1)
-            for z in range(1, (st[-1])):
-                st.append((st[-1]-z))
+            previous_length = st[-1]
+            for z in range(1, previous_length):
+                st.append((previous_length-z))
             st.append(0)
             print(st)
-            break
         else:
-            st.append(0)
-            for i in range(1, (range_fill // 2)):
+            #if i < 1:
+            #    for i in range(x):
+            #        st.append(i)
+            #    print(st)
+            #    break
+            #else:
+            if i < 1:
+                st.append(0)
+            print('tru')
+            for i in range(1, (range_fill // 2)+1):
                 st.append(i)
-            for z in range(1, st[-1]):
-                st.append(st[-1]-z)
+            previous_length = st[-1]
+            for z in range(1, (range_fill // 2)):
+                st.append(previous_length - z)
             st.append(0)
-            print(st)
-            break
-
+    print(f'st = {st}')
 
         #print(ranges[i])
         #print(ranges[i+1])
