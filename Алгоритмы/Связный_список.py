@@ -73,3 +73,6 @@ def find_val(node, value):
 
 head, value = n1, 'third'
 print(find_val(head, value))
+
+
+
