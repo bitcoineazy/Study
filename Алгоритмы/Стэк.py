@@ -1,3 +1,4 @@
+# Стэк работает по принципу LIFO - Last in First out
 class Stack:
     def __init__(self):
         self.items = []

@@ -28,6 +28,14 @@ class Queue:  # Очередь на кольцевом буфере, Сложн�
         self.size -= 1
         return x
 
+    def peek(self):  # Вернуть первый элемент
+        if self.is_empty():
+            return None
+        return self.queue[self.head]
+
+    def get_size(self):
+        return self.size
+
 
 q = Queue(8)
 q.push(1)
