@@ -31,9 +31,13 @@ class Deck:
         if self.get_size() > 0:
             pop_front = self.queue[self.head_front]
             if pop_front is None:
-                print(self.queue[self.tail_back + 1])
-                self.queue[self.tail_back] = None
-                self.tail_back += (self.tail_back + 1) % self.max_size
+                '''print(self.queue[self.tail_back - 1])
+                self.queue[self.tail_back - 1] = None
+                self.tail_back += (self.tail_back - 1) % self.max_size
+                self.size -= 1'''
+                print(self.queue[self.head_back])
+                self.queue[self.head_back] = None
+                self.head_back = (self.head_back - 1) % self.max_size
                 self.size -= 1
             else:
                 print(self.queue[self.tail_front - 1])
@@ -48,14 +52,21 @@ class Deck:
         if self.get_size() > 0:
             pop_back = self.queue[self.head_back]
             if pop_back is None:
+                #print('123')
                 print(self.queue[self.head_front])
                 self.queue[self.head_front] = None
                 self.head_front = (self.head_front + 1) % self.max_size
                 self.size -= 1
             else:
+                '''print('345')
+                print(self.queue)
                 print(self.queue[self.tail_back])
-                self.queue[self.tail_back + 1] = None
+                self.queue[self.tail_back] = None
                 # self.head_back = (self.head_back - 1) % self.max_size
+                self.tail_back = (self.tail_back + 1) % self.max_size
+                self.size -= 1'''
+                print(self.queue[(self.tail_back + 1) % self.max_size])
+                self.queue[(self.tail_back + 1) % self.max_size] = None
                 self.tail_back = (self.tail_back + 1) % self.max_size
                 self.size -= 1
         else:
@@ -69,9 +80,9 @@ def main():
     #n = int(input())
     #n = 4
     #max_size = int(input())
-    max_size = 6
+    max_size = 9
     #commands = [input() for i in range(n)]
-    commands = ['push_front -201', 'push_back 959', 'push_back 102', 'push_front 20', 'pop_front', 'pop_back', 'pop_front', 'pop_back']
+    commands = ['push_back -977', 'pop_back', 'pop_back', 'push_front -86', 'pop_back', 'push_back 81', 'push_back 123', 'pop_front', 'pop_front', 'pop_back']
     deck = Deck(max_size)
     for i in commands:
         if 'push_front' in i:
@@ -82,7 +93,8 @@ def main():
             deck.pop_front()
         if 'pop_back' in i:
             deck.pop_back()
-    # print(deck.queue)
+        print(i, deck.queue)
+    print(deck.queue)
 
 
 main()
