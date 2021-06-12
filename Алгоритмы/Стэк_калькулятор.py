@@ -27,7 +27,8 @@ class StackCalculator:
 
 def main():
     calculator = StackCalculator()
-    print(calculator.calculate_expression('3 10 5 / +')) # 10 / 5 = 2, 3 + 2 = 5
-    print(calculator.calculate_expression('5 4 3 2 1 * * * *')) # fact(5) = 120
+    print(calculator.calculate_expression('3 10 5 / +'))  # 10 / 5 = 2, 3 + 2 = 5
+    print(calculator.calculate_expression('5 4 3 2 1 * * * *'))  # fact(5) = 120
+
 
 main()
