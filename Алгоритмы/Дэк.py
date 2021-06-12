@@ -49,16 +49,17 @@ def main():
     n = int(input())
     max_size = int(input())
     commands = [input() for i in range(n)]
-    deck = Deque(max_size)
+    deque = Deque(max_size)
     for i in commands:
-        if 'push_front' in i:
-            deck.push_front(i.split()[1])
-        if 'push_back' in i:
-            deck.push_back(i.split()[1])
-        if 'pop_front' in i:
-            print(deck.pop_front())
-        if 'pop_back' in i:
-            print(deck.pop_back())
+        operation, *value = i.split()
+        method = getattr(deque, operation)
+        if value:
+            answer = method(int(value[0]))
+            if answer is not None:
+                print(answer)
+        else:
+            answer = method()
+            print(answer)
 
 
 if __name__ == '__main__':
