@@ -6,7 +6,9 @@ def insertion_sort(array):
             array[j] = array[j - 1]
             j -= 1
         array[j] = item_to_insert
-        print(f'step {i}, sorted {i+1} elements: {array}')
+        print(f'step {i}, sorted {i + 1} elements: {array}')
     return array
 
+
+# Временная сложность: O(n^2)
 print(insertion_sort([9, 12, 64, 6, 9]))
