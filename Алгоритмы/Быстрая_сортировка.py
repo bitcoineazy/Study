@@ -13,8 +13,8 @@ def quicksort(array):
         return array  # массивы с 0 или 1 элементами фактически отсортированы
     else:  # рекурсивный случай
         pivot = array[randint(0, len(array) - 1)]  # опора, случайный элемент из array
-        less, center, greater = partition(array, pivot)
-        return quicksort(less) + center + quicksort(greater)
+        left, center, right = partition(array, pivot)
+        return quicksort(left) + center + quicksort(right)
 
 
 print(quicksort([1, 3, 98, 54, 20, 8, 10, 2]))
