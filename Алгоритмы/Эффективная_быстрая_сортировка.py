@@ -1,12 +1,11 @@
 def partition(array, start, end):
-    pivot, c = start + 1, start + 1
-    while c <= end:
-        if array[c] <= array[start]:
-            array[c], array[pivot] = array[pivot], array[c]
+    pivot = start
+    for i in range(start + 1, end + 1):
+        if array[i] <= array[start]:
+            array[i], array[pivot + 1] = array[pivot + 1], array[i]
             pivot += 1
-        c += 1
-    array[start], array[pivot - 1] = array[pivot - 1], array[start]
-    return pivot - 1
+    array[start], array[pivot] = array[pivot], array[start]
+    return pivot
 
 
 def solution(array, start, end):
@@ -25,12 +24,12 @@ def main():
     #data = [input() for i in range(n)]
     n = 16
     data = [['tufhdbi', '76', '58'], ['rqyoazgbmv', '59', '78'], ['qvgtrlkmyrm', '35', '27'],
-              ['tgcytmfpj', '70', '27'],
-              ['xvf', '84', '19'], ['jzpnpgpcqbsmczrgvsu', '30', '3'], ['evjphqnevjqakze', '92', '15'],
-              ['wwzwv', '87', '8'],
-              ['tfpiqpwmkkduhcupp', '1', '82'], ['tzamkyqadmybky', '5', '81'], ['amotrxgba', '0', '6'],
-              ['easfsifbzkfezn', '100', '28'],
-              ['kivdiy', '70', '47'], ['audi', '70', '47'], ['gosha', '80', '47'], ['rita', '80', '47']]
+            ['tgcytmfpj', '70', '27'],
+            ['xvf', '84', '19'], ['jzpnpgpcqbsmczrgvsu', '30', '3'], ['evjphqnevjqakze', '92', '15'],
+            ['wwzwv', '87', '8'],
+            ['tfpiqpwmkkduhcupp', '1', '82'], ['tzamkyqadmybky', '5', '81'], ['amotrxgba', '0', '6'],
+            ['easfsifbzkfezn', '100', '28'],
+            ['kivdiy', '70', '47'], ['audi', '70', '47'], ['gosha', '80', '47'], ['rita', '80', '47']]
     for i in range(n):
         data[i] = [-int(data[i][1]), int(data[i][2]), data[i][0]]
     solution(data, start=0, end=n - 1)
