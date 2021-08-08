@@ -17,7 +17,7 @@ def broken_search(nums, target) -> int:
                 return index_search(array, mid + 1, right, target)
             else:
                 return index_search(array, left, mid - 1, target)
-        if array[left] == array[mid]:
+        if array[mid] == array[left]:
             if array[mid] != array[right]:
                 return index_search(array, mid + 1, right, target)
             else:
@@ -28,8 +28,8 @@ def broken_search(nums, target) -> int:
                     return result
         return -1
 
-    high, low = len(nums) - 1, 0
-    return index_search(nums, low, high, target)
+    start, end = 0, len(nums) - 1
+    return index_search(nums, start, end, target)
 
 
 def main():
