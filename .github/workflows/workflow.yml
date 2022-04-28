@@ -33,7 +33,7 @@ jobs:
         id: traffic
         uses: yi-Xu-0100/traffic-to-badge@v1.4.0
         with:
-          my_token: ${{ secrets.TRAFFIC_ACTION_TOKEN }}
+          my_token: ${{ secrets.STUDY_TRAFFIC_ACTION_TOKEN }}
           #(default) static_list: ${{ github.repository }}
           #(default) traffic_branch: traffic
           #(default) views_color: brightgreen
@@ -50,7 +50,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          github_token: ${{ secrets.TRAFFIC_ACTION_TOKEN }}
+          github_token: ${{ secrets.STUDY_TRAFFIC_ACTION_TOKEN }}
           publish_branch: ${{ steps.traffic.outputs.traffic_branch }}
           publish_dir: ${{ steps.traffic.outputs.traffic_path }}
           user_name: 'github-actions[bot]'
