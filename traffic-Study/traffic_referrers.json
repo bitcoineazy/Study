@@ -1,13 +1,13 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 209,
-    "uniques": 115
+    "count": 205,
+    "uniques": 109
   },
   {
     "referrer": "github.com",
-    "count": 106,
-    "uniques": 11
+    "count": 112,
+    "uniques": 12
   },
   {
     "referrer": "yandex.kz",
@@ -18,11 +18,6 @@
     "referrer": "away.vk.com",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "referrer": "yandex.by",
-    "count": 1,
-    "uniques": 1
   },
   {
     "referrer": "yandex.fr",
