@@ -1,17 +1,12 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 169,
-    "uniques": 92
+    "count": 179,
+    "uniques": 101
   },
   {
     "referrer": "github.com",
-    "count": 12,
+    "count": 13,
     "uniques": 3
-  },
-  {
-    "referrer": "koroteev.site",
-    "count": 8,
-    "uniques": 1
   }
 ]
