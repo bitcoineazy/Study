@@ -1,8 +1,8 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 277,
-    "uniques": 109
+    "count": 257,
+    "uniques": 97
   },
   {
     "referrer": "github.com",
@@ -11,7 +11,7 @@
   },
   {
     "referrer": "yandex.kz",
-    "count": 1,
-    "uniques": 1
+    "count": 2,
+    "uniques": 2
   }
 ]
