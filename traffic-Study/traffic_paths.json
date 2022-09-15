@@ -2,13 +2,13 @@
   {
     "path": "/bitcoineazy/Study",
     "title": "GitHub - bitcoineazy/Study: fa-university",
-    "count": 54,
-    "uniques": 27
+    "count": 55,
+    "uniques": 26
   },
   {
     "path": "/bitcoineazy/Study/blob/master/Test-driven%20Development_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5(%D0%A2%D0%B5%D1%81%D1%82%D1%8B_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8).py",
     "title": "Study/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py at master...",
-    "count": 45,
+    "count": 43,
     "uniques": 25
   },
   {
@@ -20,24 +20,24 @@
   {
     "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.py",
     "title": "Study/Unittest и TDD_Задание_2.py at master · bitcoineazy/Study · GitHub",
-    "count": 13,
-    "uniques": 8
+    "count": 14,
+    "uniques": 9
   },
   {
     "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_1.py",
     "title": "Study/Unittest и TDD_Задание_1.py at master · bitcoineazy/Study · GitHub",
-    "count": 12,
+    "count": 13,
     "uniques": 8
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%9D%D0%A4%D0%98%D0%A1%D0%90_V01.py",
-    "title": "Study/АНФИСА_V01.py at master · bitcoineazy/Study · GitHub",
-    "count": 11,
-    "uniques": 10
   },
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF_%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0_%D0%BA_%D0%B1%D0%B0%D0%B7%D0%B5%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.py",
     "title": "Study/прототип_запроса_к_базеданных.py at master · bitcoineazy/Study · GitHub",
+    "count": 12,
+    "uniques": 9
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%9D%D0%A4%D0%98%D0%A1%D0%90_V01.py",
+    "title": "Study/АНФИСА_V01.py at master · bitcoineazy/Study · GitHub",
     "count": 11,
     "uniques": 9
   },
@@ -48,15 +48,15 @@
     "uniques": 6
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/Assert_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B.py",
-    "title": "Study/Assert_задание_классы.py at master · bitcoineazy/Study",
-    "count": 9,
-    "uniques": 8
-  },
-  {
     "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%BD%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2_series_sum.py",
     "title": "Study/Аннотация_типов_series_sum.py at master · bitcoineazy/Study",
     "count": 9,
     "uniques": 5
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/Assert_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B.py",
+    "title": "Study/Assert_задание_классы.py at master · bitcoineazy/Study · GitHub",
+    "count": 8,
+    "uniques": 7
   }
 ]
