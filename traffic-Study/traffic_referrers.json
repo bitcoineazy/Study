@@ -1,12 +1,12 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 334,
-    "uniques": 122
+    "count": 304,
+    "uniques": 121
   },
   {
     "referrer": "yandex.fr",
-    "count": 25,
+    "count": 26,
     "uniques": 1
   },
   {
@@ -16,12 +16,7 @@
   },
   {
     "referrer": "github.com",
-    "count": 12,
-    "uniques": 6
-  },
-  {
-    "referrer": "yandex.by",
-    "count": 5,
-    "uniques": 1
+    "count": 7,
+    "uniques": 4
   }
 ]
