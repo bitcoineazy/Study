@@ -2,7 +2,7 @@
   {
     "referrer": "yandex.ru",
     "count": 312,
-    "uniques": 129
+    "uniques": 126
   },
   {
     "referrer": "yandex.fr",
@@ -16,7 +16,12 @@
   },
   {
     "referrer": "yandex.kz",
-    "count": 8,
-    "uniques": 3
+    "count": 7,
+    "uniques": 2
+  },
+  {
+    "referrer": "Bing",
+    "count": 1,
+    "uniques": 1
   }
 ]
