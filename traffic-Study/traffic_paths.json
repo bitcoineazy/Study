@@ -2,20 +2,32 @@
   {
     "path": "/bitcoineazy/Study",
     "title": "GitHub - bitcoineazy/Study: fa-university",
-    "count": 46,
-    "uniques": 17
+    "count": 45,
+    "uniques": 16
   },
   {
     "path": "/bitcoineazy/Study/blob/master/Test-driven%20Development_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5(%D0%A2%D0%B5%D1%81%D1%82%D1%8B_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8).py",
     "title": "Study/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py at master...",
-    "count": 39,
-    "uniques": 8
+    "count": 43,
+    "uniques": 9
   },
   {
     "path": "/bitcoineazy/Study/tree/master/%D0%A1%D0%B5%D0%BC%D0%B8%D0%BD%D0%B0%D1%80%D1%8B",
     "title": "Study/Семинары at master · bitcoineazy/Study · GitHub",
-    "count": 28,
-    "uniques": 3
+    "count": 36,
+    "uniques": 4
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%87%D0%B5%D0%BA_%D0%BD%D0%B0_%D0%BA%D0%B0%D1%80%D1%82%D0",
+    "title": "Study/ООП_Наследование_Расстояние_точек_на_карте.py at master · bitcoineazy/S...",
+    "count": 21,
+    "uniques": 10
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_1.py",
+    "title": "Study/Unittest и TDD_Задание_1.py at master · bitcoineazy/Study · GitHub",
+    "count": 21,
+    "uniques": 6
   },
   {
     "path": "/bitcoineazy/Study/tree/master/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B",
@@ -26,37 +38,25 @@
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%A1%D0%B5%D0%BC%D0%B8%D0%BD%D0%B0%D1%80%D1%8B/sem_06_2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80_2021_final.ipynb",
     "title": "Study/sem_06_2 семестр_2021_final.ipynb at master · bitcoineazy/Study · GitHub",
-    "count": 19,
-    "uniques": 2
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_1.py",
-    "title": "Study/Unittest и TDD_Задание_1.py at master · bitcoineazy/Study · GitHub",
-    "count": 17,
-    "uniques": 5
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%87%D0%B5%D0%BA_%D0%BD%D0%B0_%D0%BA%D0%B0%D1%80%D1%82%D0",
-    "title": "Study/ООП_Наследование_Расстояние_точек_на_карте.py at master · bitcoineazy/S...",
-    "count": 16,
-    "uniques": 9
+    "count": 21,
+    "uniques": 3
   },
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5_%D0%BC%D0%B5%D0%B6%D0%B4%D1%83_%D0%BB%D1%8E%D0%B4%D1%8C%D0%BC%D0%B8.py",
     "title": "Study/ООП_взаимодействие_между_людьми.py at master · bitcoineazy/Study · GitHub",
-    "count": 11,
+    "count": 18,
     "uniques": 5
   },
   {
     "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.py",
     "title": "Study/Unittest и TDD_Задание_2.py at master · bitcoineazy/Study · GitHub",
-    "count": 11,
-    "uniques": 5
+    "count": 13,
+    "uniques": 6
   },
   {
-    "path": "/bitcoineazy/Study/tree/master/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5",
-    "title": "Study/Большие_данные at master · bitcoineazy/Study · GitHub",
-    "count": 11,
-    "uniques": 3
+    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BD%D0%B0_%D1%85%D0%BE%D0%BB%D1%81%D1%82%D0%B5_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C.py",
+    "title": "Study/ООП_треугольник_на_холсте_площадь.py at master · bitcoineazy/Study · Gi...",
+    "count": 13,
+    "uniques": 2
   }
 ]
