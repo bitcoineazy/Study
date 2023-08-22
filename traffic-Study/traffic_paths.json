@@ -2,20 +2,8 @@
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%9D%D0%A4%D0%98%D0%A1%D0%90_V02(TIME).py",
     "title": "Study/АНФИСА_V02(TIME).py at master · bitcoineazy/Study · GitHub",
-    "count": 8,
+    "count": 10,
     "uniques": 2
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/Exceptions.py",
-    "title": "Study/Exceptions.py at master · bitcoineazy/Study",
-    "count": 8,
-    "uniques": 2
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/Unittest%2C%20test%20cases%20%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F.py",
-    "title": "Study/Unittest, test cases Теория.py at master · bitcoineazy/Study",
-    "count": 8,
-    "uniques": 1
   },
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF_%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0_%D0%BA_%D0%B1%D0%B0%D0%B7%D0%B5%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.py",
@@ -24,10 +12,28 @@
     "uniques": 1
   },
   {
+    "path": "/bitcoineazy/Study/blob/master/Exceptions.py",
+    "title": "Study/Exceptions.py at master · bitcoineazy/Study",
+    "count": 6,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/Unittest%2C%20test%20cases%20%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F.py",
+    "title": "Study/Unittest, test cases Теория.py at master · bitcoineazy/Study",
+    "count": 6,
+    "uniques": 1
+  },
+  {
     "path": "/bitcoineazy/Study/blob/master/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_%D1%81%D0%BE_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0%D0%BC%D0%B8.py",
     "title": "Study/работа_со_строками.py at master · bitcoineazy/Study · GitHub",
     "count": 4,
     "uniques": 2
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/%D0%9C%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/README.md",
+    "title": "Study/Мобильные_приложения/README.md at master · bitcoineazy/Study",
+    "count": 4,
+    "uniques": 1
   },
   {
     "path": "/bitcoineazy/Study/blob/master/Assert_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.py",
@@ -50,12 +56,6 @@
   {
     "path": "/bitcoineazy/Study/blob/2c82adbd1a0fcc86e4c4ab35f7dbff114194f14c/%D0%9E%D0%9E%D0%9F_%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5_%D0%BC%D0%B5%D0%B6%D0%B4%D1%83_%D0%BB%D1%8E%D0%B4%D1%8C%D0%BC%D0%B8.py",
     "title": "Study/ООП_взаимодействие_между_людьми.py at 2c82adbd1a0fcc86e4c4ab35f7dbff114...",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5_%D0%BC%D0%B5%D0%B6%D0%B4%D1%83_%D0%BB%D1%8E%D0%B4%D1%8C%D0%BC%D0%B8.py",
-    "title": "Study/ООП_взаимодействие_между_людьми.py at master · bitcoineazy/Study",
     "count": 2,
     "uniques": 1
   }
