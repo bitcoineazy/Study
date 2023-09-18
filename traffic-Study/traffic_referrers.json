@@ -6,7 +6,12 @@
   },
   {
     "referrer": "yandex.ru",
-    "count": 77,
-    "uniques": 17
+    "count": 69,
+    "uniques": 13
+  },
+  {
+    "referrer": "yandex.by",
+    "count": 2,
+    "uniques": 1
   }
 ]
