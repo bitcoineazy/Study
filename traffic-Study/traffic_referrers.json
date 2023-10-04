@@ -1,8 +1,8 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 108,
-    "uniques": 12
+    "count": 104,
+    "uniques": 10
   },
   {
     "referrer": "ya.ru",
@@ -16,11 +16,6 @@
   },
   {
     "referrer": "yandex.by",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "yandex.kz",
     "count": 2,
     "uniques": 1
   }
