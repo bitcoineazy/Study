@@ -2,7 +2,7 @@
   {
     "referrer": "yandex.ru",
     "count": 70,
-    "uniques": 19
+    "uniques": 18
   },
   {
     "referrer": "github.com",
@@ -11,6 +11,11 @@
   },
   {
     "referrer": "ya.ru",
+    "count": 4,
+    "uniques": 1
+  },
+  {
+    "referrer": "yandex.by",
     "count": 4,
     "uniques": 1
   }
