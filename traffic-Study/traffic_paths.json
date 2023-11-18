@@ -2,14 +2,14 @@
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%9D%D0%A4%D0%98%D0%A1%D0%90_V02(TIME).py",
     "title": "Study/АНФИСА_V02(TIME).py at master · bitcoineazy/Study · GitHub",
-    "count": 41,
-    "uniques": 8
+    "count": 29,
+    "uniques": 6
   },
   {
     "path": "/bitcoineazy/Study",
     "title": "GitHub - bitcoineazy/Study: fa-university",
-    "count": 19,
-    "uniques": 6
+    "count": 21,
+    "uniques": 8
   },
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF_%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0_%D0%BA_%D0%B1%D0%B0%D0%B7%D0%B5%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.py",
@@ -20,14 +20,20 @@
   {
     "path": "/bitcoineazy/Study/blob/master/%D0%92%D1%8B%D0%B2%D0%B5%D1%81%D1%82%D0%B8_%D0%B2%D1%81%D0%B5_%D0%BD%D0%B5%D1%87%D0%B5%D1%82_%D0%BE%D1%82_5%D0%B4%D0%BE50.py",
     "title": "Study/Вывести_все_нечет_от_5до50.py at master · bitcoineazy/Study · GitHub",
-    "count": 16,
+    "count": 18,
     "uniques": 2
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5_%D0%BC%D0%B5%D0%B6%D0%B4%D1%83_%D0%BB%D1%8E%D0%B4%D1%8C%D0%BC%D0%B8.py",
-    "title": "Study/ООП_взаимодействие_между_людьми.py at master · bitcoineazy/Study · GitHub",
-    "count": 10,
-    "uniques": 3
+    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%87%D0%B5%D0%BA_%D0%BD%D0%B0_%D0%BA%D0%B0%D1%80%D1%82%D0",
+    "title": "Study/ООП_Наследование_Расстояние_точек_на_карте.py at master · bitcoineazy/S...",
+    "count": 14,
+    "uniques": 5
+  },
+  {
+    "path": "/bitcoineazy/Study/commits",
+    "title": "Commits · bitcoineazy/Study · GitHub",
+    "count": 14,
+    "uniques": 2
   },
   {
     "path": "/bitcoineazy/Study/tree/master/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B",
@@ -42,21 +48,15 @@
     "uniques": 4
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%87%D0%B5%D0%BA_%D0%BD%D0%B0_%D0%BA%D0%B0%D1%80%D1%82%D0",
-    "title": "Study/ООП_Наследование_Расстояние_точек_на_карте.py at master · bitcoineazy/S...",
+    "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.py",
+    "title": "Study/Unittest и TDD_Задание_2.py at master · bitcoineazy/Study · GitHub",
     "count": 8,
     "uniques": 3
   },
   {
-    "path": "/bitcoineazy/Study/tree/master/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
-    "title": "Study/Машинное_обучение at master · bitcoineazy/Study · GitHub",
-    "count": 7,
-    "uniques": 3
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B/%D0%9E%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D1%8C_%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA.py",
-    "title": "Study/Алгоритмы/Очередь_связный_список.py at master · bitcoineazy/Study · Git...",
-    "count": 6,
-    "uniques": 3
+    "path": "/bitcoineazy/Study/blob/master/%D0%9E%D0%9E%D0%9F_%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5_%D0%BC%D0%B5%D0%B6%D0%B4%D1%83_%D0%BB%D1%8E%D0%B4%D1%8C%D0%BC%D0%B8.py",
+    "title": "Study/ООП_взаимодействие_между_людьми.py at master · bitcoineazy/Study · GitHub",
+    "count": 8,
+    "uniques": 2
   }
 ]
