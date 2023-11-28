@@ -6,8 +6,8 @@
   },
   {
     "referrer": "github.com",
-    "count": 55,
-    "uniques": 6
+    "count": 50,
+    "uniques": 7
   },
   {
     "referrer": "yandex.eu",
@@ -16,17 +16,17 @@
   },
   {
     "referrer": "yandex.by",
-    "count": 16,
+    "count": 12,
     "uniques": 1
-  },
-  {
-    "referrer": "ya.ru",
-    "count": 10,
-    "uniques": 5
   },
   {
     "referrer": "yandex.kz",
     "count": 10,
     "uniques": 1
+  },
+  {
+    "referrer": "ya.ru",
+    "count": 8,
+    "uniques": 4
   }
 ]
