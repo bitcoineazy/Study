@@ -1,7 +1,7 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 95,
+    "count": 96,
     "uniques": 14
   },
   {
@@ -12,6 +12,11 @@
   {
     "referrer": "contest.yandex.ru",
     "count": 7,
+    "uniques": 1
+  },
+  {
+    "referrer": "ya.ru",
+    "count": 2,
     "uniques": 1
   }
 ]
