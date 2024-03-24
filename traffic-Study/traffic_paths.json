@@ -2,13 +2,13 @@
   {
     "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.py",
     "title": "Study/Unittest и TDD_Задание_2.py at master · bitcoineazy/Study · GitHub",
-    "count": 36,
-    "uniques": 12
+    "count": 38,
+    "uniques": 13
   },
   {
     "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_1.py",
     "title": "Study/Unittest и TDD_Задание_1.py at master · bitcoineazy/Study · GitHub",
-    "count": 24,
+    "count": 28,
     "uniques": 7
   },
   {
@@ -30,6 +30,12 @@
     "uniques": 2
   },
   {
+    "path": "/bitcoineazy/Study",
+    "title": "GitHub - bitcoineazy/Study: fa-university",
+    "count": 10,
+    "uniques": 6
+  },
+  {
     "path": "/bitcoineazy/Study/blob/master/%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF_%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0_%D0%BA_%D0%B1%D0%B0%D0%B7%D0%B5%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.py",
     "title": "Study/прототип_запроса_к_базеданных.py at master · bitcoineazy/Study · GitHub",
     "count": 10,
@@ -48,15 +54,9 @@
     "uniques": 2
   },
   {
-    "path": "/bitcoineazy/Study",
-    "title": "GitHub - bitcoineazy/Study: fa-university",
-    "count": 9,
-    "uniques": 5
-  },
-  {
-    "path": "/bitcoineazy/Study/tree/master/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B",
-    "title": "Study/Алгоритмы at master · bitcoineazy/Study · GitHub",
-    "count": 9,
-    "uniques": 4
+    "path": "/bitcoineazy/Study/blob/master/Unittest_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.py",
+    "title": "Study/Unittest_библиотека_задание.py at master · bitcoineazy/Study · GitHub",
+    "count": 8,
+    "uniques": 1
   }
 ]
