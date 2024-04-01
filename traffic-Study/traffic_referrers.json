@@ -1,26 +1,21 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 65,
-    "uniques": 12
+    "count": 59,
+    "uniques": 9
   },
   {
     "referrer": "github.com",
-    "count": 32,
-    "uniques": 8
+    "count": 40,
+    "uniques": 9
   },
   {
     "referrer": "ya.ru",
-    "count": 32,
-    "uniques": 5
+    "count": 30,
+    "uniques": 4
   },
   {
     "referrer": "away.vk.com",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "poisk.skydns.ru",
     "count": 2,
     "uniques": 1
   }
