@@ -11,6 +11,11 @@
   },
   {
     "referrer": "ya.ru",
+    "count": 4,
+    "uniques": 2
+  },
+  {
+    "referrer": "yandex.by",
     "count": 2,
     "uniques": 1
   }
