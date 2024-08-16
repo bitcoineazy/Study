@@ -1,7 +1,12 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 49,
-    "uniques": 9
+    "count": 23,
+    "uniques": 7
+  },
+  {
+    "referrer": "ya.ru",
+    "count": 2,
+    "uniques": 1
   }
 ]
