@@ -1,16 +1,16 @@
 [
   {
     "referrer": "yandex.ru",
-    "count": 39,
-    "uniques": 13
+    "count": 38,
+    "uniques": 12
   },
   {
-    "referrer": "ya.ru",
+    "referrer": "github.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "github.com",
+    "referrer": "ya.ru",
     "count": 1,
     "uniques": 1
   }
