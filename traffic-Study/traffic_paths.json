@@ -30,6 +30,12 @@
     "uniques": 2
   },
   {
+    "path": "/bitcoineazy/Study",
+    "title": "bitcoineazy/Study: fa-university",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/bitcoineazy/Study/blame/master/recursion_fibonacci_factorial.py",
     "title": "Blaming Study/recursion_fibonacci_factorial.py at master · bitcoineazy/Study ...",
     "count": 1,
@@ -50,12 +56,6 @@
   {
     "path": "/bitcoineazy/Study/blob/master/%D1%81%D1%87%D1%91%D1%82%D1%87%D0%B8%D0%BA_%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%BD%D1%8B%D1%85_%D1%82%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80_%D0%B8%D0%B7_%D0%BC%D0%B0%D1%81%D1%81%D0%",
     "title": "Study/счётчик_благоприятных_температур_из_массива_функция.py at master · bitc...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/bitcoineazy/Study/tree/master/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B/.ipynb_checkpoints",
-    "title": "Study/Алгоритмы/.ipynb_checkpoints at master · bitcoineazy/Study",
     "count": 1,
     "uniques": 1
   }
