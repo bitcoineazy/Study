@@ -2,6 +2,11 @@
   {
     "referrer": "yandex.ru",
     "count": 23,
-    "uniques": 14
+    "uniques": 15
+  },
+  {
+    "referrer": "ya.ru",
+    "count": 1,
+    "uniques": 1
   }
 ]
