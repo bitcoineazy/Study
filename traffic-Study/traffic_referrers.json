@@ -1,13 +1,13 @@
 [
   {
-    "referrer": "yandex.ru",
-    "count": 5,
+    "referrer": "ya.ru",
+    "count": 4,
     "uniques": 2
   },
   {
-    "referrer": "ya.ru",
-    "count": 3,
-    "uniques": 1
+    "referrer": "yandex.ru",
+    "count": 4,
+    "uniques": 2
   },
   {
     "referrer": "github.com",
