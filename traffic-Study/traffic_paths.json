@@ -1,44 +1,8 @@
 [
   {
-    "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy",
-    "title": "Study/Python_SQLAlchemy at master · bitcoineazy/Study · GitHub",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/Assert_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B.py",
-    "title": "Study/Assert_задание_классы.py at master · bitcoineazy/Study · GitHub",
-    "count": 2,
-    "uniques": 1
-  },
-  {
     "path": "/bitcoineazy/Study/blob/master/Unittest%20%D0%B8%20TDD_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_1.py",
     "title": "Study/Unittest и TDD_Задание_1.py at master · bitcoineazy/Study · GitHub",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/bitcoineazy/Study/tree/master",
-    "title": "GitHub - bitcoineazy/Study: fa-university",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/bitcoineazy/Study/blame/master/Assert_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B.py",
-    "title": "Blaming Study/Assert_задание_классы.py at master · bitcoineazy/Study · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/Chetnost.nechetnost.py",
-    "title": "Study/Chetnost.nechetnost.py at master · bitcoineazy/Study · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/bitcoineazy/Study/blob/master/%D0%90%D0%9D%D0%A4%D0%98%D0%A1%D0%90_V01.py",
-    "title": "Study/АНФИСА_V01.py at master · bitcoineazy/Study · GitHub",
-    "count": 1,
     "uniques": 1
   },
   {
@@ -48,14 +12,32 @@
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/Django_%D0%94%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B.py",
-    "title": "Study/Django_Декораторы.py at master · bitcoineazy/Study · GitHub",
+    "path": "/bitcoineazy/Study/blob/master/Python_SQLAlchemy/L3%20Functions/L3%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.ipynb",
+    "title": "Study/Python_SQLAlchemy/L3 Functions/L3 Функции.ipynb at master · bitcoineazy...",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/New1.py",
-    "title": "Study/New1.py at master · bitcoineazy/Study · GitHub",
+    "path": "/bitcoineazy/Study/blob/master/Test-driven%20Development_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5(%D0%A2%D0%B5%D1%81%D1%82%D1%8B_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8).py",
+    "title": "Study/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py at master...",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy",
+    "title": "Study/Python_SQLAlchemy at master · bitcoineazy/Study",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy/Data",
+    "title": "Study/Python_SQLAlchemy/Data at master · bitcoineazy/Study",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy/L3%20Functions",
+    "title": "Study/Python_SQLAlchemy/L3 Functions at master · bitcoineazy/Study",
     "count": 1,
     "uniques": 1
   }
