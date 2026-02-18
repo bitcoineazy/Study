@@ -1,25 +1,61 @@
 [
   {
+    "path": "/bitcoineazy/Study/blob/master/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py",
+    "title": "Study/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py at master...",
+    "count": 3,
+    "uniques": 3
+  },
+  {
     "path": "/bitcoineazy/Study",
     "title": "GitHub - bitcoineazy/Study: fa-university",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py",
+    "path": "/bitcoineazy/Study/blob/master/Assert_классы_функции_теория.py",
     "title": "Study/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py at master...",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/создание_словаря_из_двух_списков_продметод.py",
-    "title": "Study/создание_словаря_из_двух_списков_продметод.py at master · bitcoineazy/S...",
+    "path": "/bitcoineazy/Study/blob/master/Chetnost.nechetnost.py",
+    "title": "Study/Django_Декораторы.py at master · bitcoineazy/Study · GitHub",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/tree/master/Алгоритмы",
-    "title": "Study/Алгоритмы at master · bitcoineazy/Study · GitHub",
+    "path": "/bitcoineazy/Study/blob/master/Django_Декораторы.py",
+    "title": "Study/Assert_классы_функции_теория.py at master · bitcoineazy/Study · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/List_Comprehension",
+    "title": "Study/Chetnost.nechetnost.py at master · bitcoineazy/Study · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/New1.py",
+    "title": "Study/List_Comprehension at master · bitcoineazy/Study · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/chasiminuty.py",
+    "title": "Study/continue.py at master · bitcoineazy/Study · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/continue.py",
+    "title": "Study/f_строки.py at master · bitcoineazy/Study · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/f_строки.py",
+    "title": "Study/New1.py at master · bitcoineazy/Study · GitHub",
     "count": 1,
     "uniques": 1
   }
