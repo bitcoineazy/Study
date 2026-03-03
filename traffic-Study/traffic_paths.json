@@ -24,12 +24,6 @@
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/blob/master/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py",
-    "title": "Study/Test-driven Development_задание(Тесты_Алгоритм_сортировки).py at master...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/bitcoineazy/Study/blob/master/Unittest_библиотека_задание.py",
     "title": "Study/Unittest_библиотека_задание.py at master · bitcoineazy/Study · GitHub",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy/L3 Functions",
     "title": "Study/Python_SQLAlchemy at master · bitcoineazy/Study · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Алгоритмы",
+    "title": "Study/Алгоритмы at master · bitcoineazy/Study · GitHub",
     "count": 1,
     "uniques": 1
   }
