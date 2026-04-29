@@ -1,5 +1,17 @@
 [
   {
+    "path": "/bitcoineazy/Study/blob/master/Алгоритмы/ООП_конспект.ipynb",
+    "title": "/blob/master/Алгоритмы/ООП_конспект.ipynb",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/master/создание_словаря_из_двух_списков_продметод.py",
+    "title": "/blob/master/создание_словаря_из_двух_списков_продметод.py",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/bitcoineazy/Study/tree/master",
     "title": "/tree/master",
     "count": 1,
@@ -8,6 +20,18 @@
   {
     "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy",
     "title": "/tree/master/Python_SQLAlchemy",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Tkinter_Pygame",
+    "title": "/tree/master/Tkinter_Pygame",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Алгоритмы",
+    "title": "/tree/master/Алгоритмы",
     "count": 1,
     "uniques": 1
   }
