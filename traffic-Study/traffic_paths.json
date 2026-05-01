@@ -1,13 +1,25 @@
 [
   {
+    "path": "/bitcoineazy/Study/blob/master/List_Comprehension",
+    "title": "/blob/master/List_Comprehension",
+    "count": 2,
+    "uniques": 1
+  },
+  {
     "path": "/bitcoineazy/Study/blob/master/Алгоритмы/ООП_конспект.ipynb",
     "title": "/blob/master/Алгоритмы/ООП_конспект.ipynb",
-    "count": 1,
+    "count": 2,
     "uniques": 1
   },
   {
     "path": "/bitcoineazy/Study/blob/master/создание_словаря_из_двух_списков_продметод.py",
     "title": "/blob/master/создание_словаря_из_двух_списков_продметод.py",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blob/traffic/List_Comprehension",
+    "title": "/blob/traffic/List_Comprehension",
     "count": 1,
     "uniques": 1
   },
