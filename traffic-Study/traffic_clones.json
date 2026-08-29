@@ -7848,14 +7848,14 @@
       "uniques": 4
     },
     {
-      "timestamp": "2026-08-14T00:00:00Z",
-      "count": 12,
-      "uniques": 7
-    },
-    {
       "timestamp": "2026-08-15T00:00:00Z",
       "count": 4,
       "uniques": 3
+    },
+    {
+      "timestamp": "2026-08-14T00:00:00Z",
+      "count": 12,
+      "uniques": 7
     },
     {
       "timestamp": "2026-08-16T00:00:00Z",
