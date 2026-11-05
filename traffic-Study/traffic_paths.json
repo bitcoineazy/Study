@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "path": "/bitcoineazy/Study/blob/master/аннотация_типов_задание.py",
+    "title": "/blob/master/аннотация_типов_задание.py",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/blame/master/аннотация_типов_задание.py",
+    "title": "/blame/master/аннотация_типов_задание.py",
+    "count": 1,
+    "uniques": 1
+  }
+]
