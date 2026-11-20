@@ -1,13 +1,19 @@
 [
   {
-    "path": "/bitcoineazy/Study/blob/master/аннотация_типов_задание.py",
-    "title": "/blob/master/аннотация_типов_задание.py",
-    "count": 2,
+    "path": "/bitcoineazy/Study/commit/af866496af2f9e269678ca6a7a87e9f36704b2e7",
+    "title": "/commit/af866496af2f9e269678ca6a7a87e9f36704b2e7",
+    "count": 1,
     "uniques": 1
   },
   {
-    "path": "/bitcoineazy/Study/blame/master/аннотация_типов_задание.py",
-    "title": "/blame/master/аннотация_типов_задание.py",
+    "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy",
+    "title": "/tree/master/Python_SQLAlchemy",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/bitcoineazy/Study/tree/master/Python_SQLAlchemy/Data",
+    "title": "/tree/master/Python_SQLAlchemy/Data",
     "count": 1,
     "uniques": 1
   }
